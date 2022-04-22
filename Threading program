@@ -6,6 +6,18 @@ System.out.println("Now the thread is running ...");
 }    
     
 // main method  
+
+public class TestThread {
+
+   public static void main(String args[]) {
+      RunnableDemo R1 = new RunnableDemo( "Thread-1");
+      R1.start();
+      
+      RunnableDemo R2 = new RunnableDemo( "Thread-2");
+      R2.start();
+   }   
+}
+
 public static void main(String argvs[])  
 {   
 // creating an object of the class MyThread2  
